@@ -6,7 +6,7 @@ const BookingContext = createContext({});
 
 export const BookingProvider = ({ children }) => {
 
-  const apiUrl = 'http://localhost:8080'
+  const apiUrl = 'https://bookmy-show-chi.vercel.app'
   const [time, changeTime] = useState("");  //time slot state
   const [movie, changeMovie] = useState("");  //Movie state
   const [isBooking, setIsBooking]  = useState(false)  // loading state for api call
