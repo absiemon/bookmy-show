@@ -15,9 +15,7 @@ connection();
 
 
 // creating an api and seperating it.
-app.get('/', (req, res)=>{
-    return res.json({status: true})
-})
+
 app.use("/api", require("./router/routes"));
 
 // listening backend on a port.
